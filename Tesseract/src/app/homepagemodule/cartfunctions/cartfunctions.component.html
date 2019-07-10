@@ -1,0 +1,14 @@
+
+    
+<ul style="position: absolute" class="right">
+        <p class="cartfont">Your Cart</p>
+<li   *ngFor="let a of cartadd">
+    <p #name>{{a.name}} </p>
+    <p>{{a.price}}</p>
+    <button type="menu" (click)=remove(a.name) value="Remove From Cart">Remove From Cart</button>
+
+</li>
+
+
+
+
